@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>React App</title>
-    <script src="file:///android_asset/app.js">
-      window.app = app;
-    </script>
+    <script src="file:///android_asset/app.js"></script>
     <script>
       function OnStart() {
         try {
@@ -18,7 +16,7 @@
       }
     </script>
   <script defer src="bundle.js"></script></head>
-  <body onload="window.app.Start()" || null>
+  <body onload="app.Start()">
     <div id="root"></div>
   </body>
 </html>
