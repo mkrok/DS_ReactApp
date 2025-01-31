@@ -11,14 +11,14 @@
     <script>
       function OnStart() {
         try {
-          window.app.ShowPopUp('React rocks !!!');
+          app.ShowPopUp('React rocks !!!');
         } catch (error) {
           alert(error.message);
         }
       }
     </script>
   <script defer src="bundle.js"></script></head>
-  <body onload = window.app ? "window.app.Start()" : null>
+  <body onload="window.app.Start()" || null>
     <div id="root"></div>
   </body>
 </html>
