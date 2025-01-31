@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>React App</title>
-    <script src="ds:/Sys/app.js">
+    <script src="file:///android_asset/app.js">
       window.app = app;
     </script>
     <script>
       function OnStart() {
         try {
-          app.ShowPopUp('React rocks !!!');
+          app.ShowPopup('React rocks !!!');
         } catch (error) {
           alert(error.message);
         }
       }
     </script>
   <script defer src="bundle.js"></script></head>
-  <body onload="app.Start()">
+  <body onload="app.Start()" || null>
     <div id="root"></div>
   </body>
 </html>
