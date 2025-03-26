@@ -10,16 +10,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./config.json":
-/*!*********************!*\
-  !*** ./config.json ***!
-  \*********************/
-/***/ ((module) => {
-
-eval("module.exports = /*#__PURE__*/JSON.parse('{\"googleMapsToken\":\"AIzaSyBYtFG6gg-yuuYqav4XKq7d5P2I1jQIEE0\"}');\n\n//# sourceURL=webpack://app/./config.json?");
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
@@ -210,6 +200,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/config.json":
+/*!*************************!*\
+  !*** ./src/config.json ***!
+  \*************************/
+/***/ ((module) => {
+
+eval("module.exports = /*#__PURE__*/JSON.parse('{\"googleMapsToken\":\"AIzaSyBYtFG6gg-yuuYqav4XKq7d5P2I1jQIEE0\"}');\n\n//# sourceURL=webpack://app/./src/config.json?");
+
+/***/ }),
+
 /***/ "./src/data/data.js":
 /*!**************************!*\
   !*** ./src/data/data.js ***!
@@ -286,7 +286,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_button_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/button/button */ \"./src/components/button/button.js\");\n/* harmony import */ var _components_app_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/app/app */ \"./src/components/app/app.js\");\n/* harmony import */ var _components_header_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/header/header */ \"./src/components/header/header.js\");\n/* harmony import */ var _components_body_body__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/body/body */ \"./src/components/body/body.js\");\n/* harmony import */ var _components_map_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/map/map */ \"./src/components/map/map.js\");\n/* harmony import */ var _functions_locOnChange__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./functions/locOnChange */ \"./src/functions/locOnChange.js\");\n/* harmony import */ var _functions_initMap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./functions/initMap */ \"./src/functions/initMap.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _config_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../config.json */ \"./config.json\");\n/* harmony import */ var _functions_googleMapsLoader__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./functions/googleMapsLoader */ \"./src/functions/googleMapsLoader.js\");\n\n\n\n\n\n\n\n\n\n\n(0,_functions_googleMapsLoader__WEBPACK_IMPORTED_MODULE_9__[\"default\"])(_config_json__WEBPACK_IMPORTED_MODULE_8__.googleMapsToken);\nwindow.onerror = function (msg, url, lineNo, columnNo, error) {\n  var string = msg.toLowerCase();\n  var substring = 'script error';\n  if (string.indexOf(substring) > -1) {\n    alert('Script Error: See Browser Console for Detail');\n  } else {\n    var message = ['Message: ' + msg, 'URL: ' + url, 'Line: ' + lineNo, 'Column: ' + columnNo, 'Error object: ' + JSON.stringify(error)].join(' - ');\n    alert(message);\n  }\n  return false;\n};\nwindow.onload = function () {\n  (0,_functions_initMap__WEBPACK_IMPORTED_MODULE_6__[\"default\"])();\n  try {\n    window.loc = app.CreateLocator('GPS');\n    window.myPosition = {\n      lat: null,\n      lng: null\n    };\n    app.SetOrientation('Portrait');\n    loc.SetOnChange(_functions_locOnChange__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\n    loc.SetRate(0); //as often as possible\n    loc.Start();\n  } catch (_unused) {\n    console.error('Error creating the app locator');\n  }\n};\n\n//# sourceURL=webpack://app/./src/runner.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_button_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/button/button */ \"./src/components/button/button.js\");\n/* harmony import */ var _components_app_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/app/app */ \"./src/components/app/app.js\");\n/* harmony import */ var _components_header_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/header/header */ \"./src/components/header/header.js\");\n/* harmony import */ var _components_body_body__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/body/body */ \"./src/components/body/body.js\");\n/* harmony import */ var _components_map_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/map/map */ \"./src/components/map/map.js\");\n/* harmony import */ var _functions_locOnChange__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./functions/locOnChange */ \"./src/functions/locOnChange.js\");\n/* harmony import */ var _functions_initMap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./functions/initMap */ \"./src/functions/initMap.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _config_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./config.json */ \"./src/config.json\");\n/* harmony import */ var _functions_googleMapsLoader__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./functions/googleMapsLoader */ \"./src/functions/googleMapsLoader.js\");\n\n\n\n\n\n\n\n\n\n\n(0,_functions_googleMapsLoader__WEBPACK_IMPORTED_MODULE_9__[\"default\"])(_config_json__WEBPACK_IMPORTED_MODULE_8__.googleMapsToken);\nwindow.onerror = function (msg, url, lineNo, columnNo, error) {\n  var string = msg.toLowerCase();\n  var substring = 'script error';\n  if (string.indexOf(substring) > -1) {\n    alert('Script Error: See Browser Console for Detail');\n  } else {\n    var message = ['Message: ' + msg, 'URL: ' + url, 'Line: ' + lineNo, 'Column: ' + columnNo, 'Error object: ' + JSON.stringify(error)].join(' - ');\n    alert(message);\n  }\n  return false;\n};\nwindow.onload = function () {\n  (0,_functions_initMap__WEBPACK_IMPORTED_MODULE_6__[\"default\"])();\n  try {\n    window.loc = app.CreateLocator('GPS');\n    window.myPosition = {\n      lat: null,\n      lng: null\n    };\n    app.SetOrientation('Portrait');\n    loc.SetOnChange(_functions_locOnChange__WEBPACK_IMPORTED_MODULE_5__[\"default\"]);\n    loc.SetRate(0); //as often as possible\n    loc.Start();\n  } catch (_unused) {\n    console.error('Error creating the app locator');\n  }\n};\n\n//# sourceURL=webpack://app/./src/runner.js?");
 
 /***/ }),
 
